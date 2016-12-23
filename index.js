@@ -8,7 +8,7 @@ var restify = require('restify');
 
 var server = restify.createServer();
 server.listen(process.env.PORT || 3978, function() {
-    console.log('server started');
+    console.log('server started, %s %s', server.name, server.port);
 });
 
 server.get('/test', function(req, res) {
