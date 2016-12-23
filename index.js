@@ -7,7 +7,7 @@ var json2csv = require('json2csv');
 var restify = require('restify');
 
 var server = restify.createServer();
-server.listen(process.env.PORT || 3978, function() {
+server.listen(3978, function() {
     console.log('server started, %s %s', server.name, server.port);
 });
 
