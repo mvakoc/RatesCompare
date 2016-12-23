@@ -16,6 +16,7 @@ server.get('/test', function(req, res) {
 });
 
 server.get('/rates', function(req, res) {
+    res.send('hello')
     var countries = country.all().map(function(x) {
         return x.ISO.alpha2;
     }).filter(function(x) {
