@@ -2,7 +2,6 @@ var fetch = require('node-fetch')
 var country = require('countryjs')
 var _ = require('lodash')
 var json2csv = require('json2csv');
-var fs = require('fs');
 var restify = require('restify')
 
 var server = restify.createServer()
