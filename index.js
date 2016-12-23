@@ -1,6 +1,6 @@
 'use strict';
 
-var fetch = require('node-fetch');
+var fetch = require('whatwg-fetch');
 var country = require('countryjs');
 var _ = require('lodash');
 var json2csv = require('json2csv');
