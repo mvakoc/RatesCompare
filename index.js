@@ -11,6 +11,10 @@ server.listen(process.env.PORT || 3978, function() {
     console.log('server started');
 });
 
+server.get('/test', function(req, res) {
+    res.send('Hello');
+});
+
 server.get('/rates', function(req, res) {
     var countries = country.all().map(function(x) {
         return x.ISO.alpha2;
