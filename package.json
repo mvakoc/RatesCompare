@@ -13,6 +13,7 @@
     "countryjs": "^1.5.6",
     "json2csv": "^3.7.3",
     "lodash": "^4.17.2",
+    "node-fetch": "^1.6.3",
     "restify": "^4.3.0",
     "whatwg-fetch": "^2.0.1"
   }

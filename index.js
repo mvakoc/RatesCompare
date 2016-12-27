@@ -1,6 +1,4 @@
-'use strict';
-
-var fetch = require('whatwg-fetch');
+var fetch = require('node-fetch');
 var country = require('countryjs');
 var _ = require('lodash');
 var json2csv = require('json2csv');
@@ -8,7 +6,7 @@ var restify = require('restify');
 
 var server = restify.createServer();
 server.listen(3978, function() {
-    console.log('server started, %s %s', server.name, server.port);
+    console.log('server started, %s %s', server.name, server.url);
 });
 
 server.get('/test', function(req, res) {
@@ -16,7 +14,6 @@ server.get('/test', function(req, res) {
 });
 
 server.get('/rates', function(req, res) {
-    res.send('hello')
     var countries = country.all().map(function(x) {
         return x.ISO.alpha2;
     }).filter(function(x) {
