@@ -10,8 +10,9 @@ server.listen(3978, function() {
 });
 
 server.get('/test', function(req, res) {
-    res.send('Hello');
+    res.send('Hi Rene!');
 });
+
 
 server.get('/rates', function(req, res) {
     var countries = country.all().map(function(x) {
